@@ -1,0 +1,338 @@
+* {
+    /*adds this font style to every element*/
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    /*when you click on a link it will smoothly scroll to the section*/
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*this class gets added to the links when they're clicked on*/
+.on {
+    background: rgb(83, 83, 83);
+}
+
+.navbar-brand {
+    font-family: 'Amita', cursive;
+}
+
+.intro {
+    max-height: 100vh;
+}
+
+.big-picture {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/photogradient.jpg');
+    /*add parallax scroll effect to background image*/
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    margin: 10% auto;
+}
+
+.title h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Amita', cursive;
+    font-size: 5em;
+}
+
+
+/** about **/
+/*this is to style the empty div, so that the title doesn't get covered*/
+#aboutt {
+    position: relative;
+    top: -50px;
+}
+
+#about {
+    padding-bottom: 40px;
+    background-image: url('/images/bg.jpg');
+    /*add parallax scroll effect to background image*/
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 30px;
+    margin-bottom: 5vh;
+    color: white;
+}
+
+.who-are-we p{
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+.staff {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.staff img {
+    width: 350px;
+    height: 300px;
+    margin: 15px;
+}
+
+/** gallery **/
+#galleryy {
+    position: relative;
+    top: -45px;
+}
+
+#gallery {
+    padding: 0 10px;
+    background-image: url('/images/camerablack.jpg');
+    /*add parallax scroll effect to background image*/
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 50px;
+}
+
+#gallery h2 {
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 30px;
+    margin-bottom: 5vh;
+    color: white;
+}
+
+.gallery-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-img img {
+    width: 350px;
+    height: 300px;
+    margin: 15px;
+}
+
+.gallery-img img:hover {
+    /*so that the image rotate's when hovered*/
+    transition: all 0.1s linear;
+    transform: rotate(10deg);
+}
+
+
+/**contact**/
+#contact {
+    height: 50vh;
+    background: rgb(201, 198, 198);
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 30px;
+}
+
+#contact h5 {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 0.5px solid rgb(121, 121, 121);
+}
+
+#contact p {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+/*styling the social media icons*/
+i {
+    font-size: 4em;
+    margin: 20px;
+    cursor: pointer;
+}
+
+/**footer**/
+footer p {
+    text-align: center;
+    padding: 20px;
+}
+
+/* media queries for responsiveness */
+@media (min-width: 320px) and (max-width: 574px){
+    .title h1 {
+        font-size: 2.5em;
+        margin-top: 25%;
+    }
+
+    .who-are-we p{
+        text-align: center;
+        color: white;
+        backdrop-filter: blur(10px);
+        padding: 0 10px;
+    }
+
+    .staff img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .gallery-img img {
+        width: 300px;
+        height: 250px;
+    }
+
+    #contact {
+        height: 100%;
+    }
+
+    #contact h5 {
+        font-size: 1.1em;
+    }
+
+    i {
+        font-size: 2.5em;
+        margin: 20px;
+        cursor: pointer;
+    }
+}
+
+
+@media (min-width: 575px) and (max-width: 766px){ 
+    .title h1 {
+        font-size: 2em;
+        margin-top: 20%;
+    }
+
+    .who-are-we p{
+        text-align: center;
+        color: white;
+        backdrop-filter: blur(10px);
+        padding: 0 10px;
+    }
+
+    .staff img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .gallery-img img {
+        width: 300px;
+        height: 250px;
+    }
+
+    #contact {
+        height: 100%;
+    }
+
+    #contact h5 {
+        font-size: 1.1em;
+    }
+
+    i {
+        font-size: 2.5em;
+        margin: 20px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px){ 
+    .title h1 {
+        font-size: 4em;
+        margin-top: 15%;
+    }
+
+    .who-are-we p{
+        text-align: center;
+        color: white;
+        font-weight: 500;
+        font-size: 1.2em;
+        backdrop-filter: blur(10px);
+    }
+
+    .staff img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .gallery-img img { 
+        width: 300px;
+        height: 250px;
+        justify-self: center;
+    }
+
+    #contact {
+        height: 100%;
+    }
+
+    #contact h5 {
+        font-size: 1.1em;
+    }
+
+    i {
+        font-size: 3em;
+        margin: 20px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    #gallery h2{
+        padding-top: 100px;
+    }
+}
+
+/*pretty scrollbar*/
+.scrollbar {
+    margin-left: 30px;
+    float: left;
+    height: 300px;
+    width: 65px;
+    background: #fff;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #F5F5F5; 
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(150deg, black, gray);
+}
